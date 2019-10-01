@@ -53,10 +53,12 @@ def apply_coupons(cart, coupons)
               
               cart[coupon[:item]][:count] -= coupon[:num]
               # Reduce our coupon's count by the number of items redeemable against the coupon - the avocado coupon is now spent.
-              
+            end
+
             end
           end
         end
+        cart
 end
 
 
